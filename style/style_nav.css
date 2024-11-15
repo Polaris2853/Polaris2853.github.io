@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--text);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+/* Format navigation */
+nav {
+  font-size: 1rem;
+  line-height: 2;
+  padding: 1rem 0;
+  margin-left: 1rem;
+}
+
+nav a {
+  border: 1px solid var(--text);
+  border-radius: 5px;
+  color: var(--text) !important;
+  display: inline-block;
+  padding: .1rem 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: .4s;
+}
+
+nav a:hover,
+nav a.current {
+  color: var(--text) !important;
+  background: var(--accent);
+}
+
+nav a.current:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    font-size: 0.8rem; /* Reduce the font size to make the text smaller */
+    line-height: 1.7; /* Reduce the line height to make the links more compact */
+    padding: 0.4rem 0; /* Reduce the vertical padding */
+    margin-left: 0.4rem; /* Reduce the left margin */
+  }
+  
+  nav a {
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    color: var(--text) !important;
+    display: inline-block;
+    padding: 0.1rem 0.7rem; /* Reduce the padding to make the links smaller */
+    margin-right: 0.1rem; /* Reduce the right margin */
+    text-decoration: none;
+    transition: 0.4s;
+  }
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 50rem;
+    width: 100%;
+}
+
+footer {
+  border-top: 1px solid var(--text);
+  margin: 3rem auto 0;
+  padding: 0.5rem 0 0;
+  text-align: center;
+  font-size: .9rem;
+}
+
+
+.insta-imgs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.social-media {
+  font-size: 24px;
+}
+
+.fa {  
+  padding: 10px;
+  text-align: center;
+  color: var(--fa-color);
+}
+
+.fa:hover {  
+  opacity: 0.5;  
+}
+
+p a {
+  color: var(--text);
+}
+
+.centre {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 4rem 0 -1.5rem 0;
+}
